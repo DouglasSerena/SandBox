@@ -1,0 +1,92 @@
+//comandos do terminal
+
+man = iforma sobre outro comandos
+
+// comandos de navegação de diretorios
+
+CD = volta ao diretorio do usuario {
+    CD + diretorio de destino = andar nos diretorio 
+    - = volta ao utimo diretorio
+    ~ = volta para o diretorio do usuario
+    .. = volta um diretorio
+    / = vai para o diretorio raiz do sistema
+    ../../ = volta dois diretorio
+}
+PWD = mostra o diretorio atual
+MKDIR = cria um novo diretorio
+LS = ve arquivos do diretorio
+GREP + nomeDoObjeto = buscas em textos
+
+// comandos de gerenciamento de arquivo
+
+FILL = informar qual é o tipo de arquivo
+CP arquivoDeOrigen + arquivoDeDestino = copia arquivos
+MV arquivo1 + arquivo2 = poder mover ou renomear o arquivo(s)
+MORE = para ler o arquivo
+CHMOD {
+    a+x  = definir permisao root para arquivos
+    -R 777 = definir permisao root a um diretorio inteiro
+}
+NANO = editor de arquivos
+RM = remove um arquivo {
+    -r = remove um diretorio
+    -rf = remove sem perguntas
+}
+find ~ iname '*nome do arquivo' = procura pelo arquivo
+cat = informar o que a dentro do arquivo
+
+//comandos de gerenciamento
+
+touch = criar arquivos
+df + -h = para ver o espaco de disco
+lscpu | grep -i mhz = ver clock do cpu
+su - = permissão especial mais poderoso
+sudo = permissão especial
+sudo su = permissão especial definitiva
+clear = ativar o git bash no linuxlimpar o terminal
+date = mostra a data do sistema
+cal = mostra o calendario do sistema
+dpkg {
+    -i = install / descompactar
+}
+install {
+    -f = instala as dependencia dos pacotes
+}
+
+// comandos de rede
+
+ping = verifica se esta conectando em um servidor
+ip addr show = mostra o endereço ip da placa
+dig + dominio = mostra mais detalhados o dns
+telnet + dominio + porta = server para conectar um maquina com uma porta específica
+
+repositorio (net-tools)
+
+netstat {
+    -r = mostra as rotas
+    -a mostra as portas abertas do pc
+    -nt mostra todas conexoees tcp conectado a o pc
+}
+ifconfig {
+    -a = lista as placas ativas
+    eth0 down = desabilita placa com endereço eth0
+    etho up = ativa  placa com endereço eth0
+}
+ip addr
+traceroute + dominio = ve em tempo real todos os caminhos que o pacote percorre até o destino (cade linha que aprece é chamada de pulo)
+
+repositorio (dnsutils)
+
+nslookup + dominio = mostar o ip, dns ...
+
+// comandos para scripts
+
+#!/bin/bash = define o arquivo para rodar no terminal
+
+// comandos para desabilitar o BD_PHOCHOT
+
+repositorio (msr-tools)
+
+modprobe msr
+rdmsr 0x1FC = 4005d
+wrmsr 0x1FC 4004d
