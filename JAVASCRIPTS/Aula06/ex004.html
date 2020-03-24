@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        .letras {
+            font: normal 20pt arial;
+            margin: auto;
+            padding: 10px;
+            background-color:lightcoral;
+            width: 300px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+
+    <script>
+        var nome = window.prompt("qual é seu nome");
+        document.write(`<div class="letras">Olá <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.</div><br/>`);
+        document.write(`<div class="letras">Seu nome com letra maiusculas é ${nome.toUpperCase()}!</div><br/>`);
+        document.write(`<div class="letras">Seu nome com letras minusculas é ${nome.toLowerCase()}!</div>`)
+    </script>    
+</body>
+</html>

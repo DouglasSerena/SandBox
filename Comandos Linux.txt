@@ -90,3 +90,7 @@ repositorio (msr-tools)
 modprobe msr
 rdmsr 0x1FC = 4005d
 wrmsr 0x1FC 4004d
+
+//node
+
+npm repositorio de controle do node
