@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>somando Números</title>
+    <link rel="stylesheet" type="text/css" href="./styke.css"/>
+</head>
+<body>
+    <center>
+        <h1>somando valores</h1>
+        <input type="number" placeholder="0" name="box1" id="box1">+
+        <input type="number" placeholder="0" name="box2" id="box2">=
+        <div id="res">0</div>
+        <input type="button" value="Somar" onclick="somar()" class="somar">
+    <center>
+    <script>
+        function somar() {
+            var tn1 = document.getElementById('box1')
+            var tn2 = document.querySelector('input#box2')
+            var res = document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `${s}`
+
+        }
+    </script>
+</body>
+</html>

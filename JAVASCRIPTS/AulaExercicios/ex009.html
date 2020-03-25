@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Brasileiro ou estrangeiro</h1>
+    Informa seu pais
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Você é" onclick="paises()">
+    <div id="R"></div>
+    <script>
+        function paises() {
+            var pais = document.querySelector('input#pais')
+            var pais = String(pais.value)
+            var R = document.querySelector('div#R')
+
+            if (pais == "brasil") {
+                R.innerHTML = 'Você é brasileiro!'
+            }else{
+                R.innerHTML = 'Você é estrangeir!'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>sistema de Multa</h1>
+    velocidade do carro : <input type="number" name="textvel" id="textvel"> Km/h
+    <input type="button" value="verificar" onclick="velo()">
+    <div id="res"></div>
+    <script>
+        function velo(){
+            var vel = document.getElementById('textvel')
+            var vel = Number(vel.value)
+            var res = document.querySelector('div#res')
+    
+            if (vel > 60) {
+                res.innerHTML = `<p>Você está andando acima da velocidade, o limite é 60 Km/h Você esta a <strong>${vel} Km/h</strong></p>`
+                res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
+            }else{
+                res.innerHTML = `<p>parabem você esta no limite, o limite é 60 Km/h e você está a <strong>${vel} Km/h</strong></p>`
+                res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.centro {
+    width: 500px;
+    margin: auto;
+}
+input {
+    width: 50px;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    border: 1px solid gray;
+    border-left: 2px solid gray;
+    border-top: 2px solid gray;
+}
+input.somar {
+    border: 1px solid gray;
+    border-left: 2px solid gray;
+    border-top: 2px solid gray;
+    display: block;
+    margin-top: 10px;
+    background-color: lightgoldenrodyellow;
+}
+div#res {
+    border: 1px solid gray;
+    border-left: 2px solid gray;
+    border-top: 2px solid gray;
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+}

@@ -66,7 +66,43 @@ typeof // mostra qual tipo do variavel
     n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
         ^um string localizada por parte do mundo
 
+//operadores
 
+    5 + 2 = 7
+    5 - 2 = 3
+    5 * 2 = 10
+    5 / 2 = 2.5
+    //resto da divisão como o mod do c
+    5 % 2 = 1
+    //potencia seria 5²
+    5 ** 2 = 25
+
+//relacionais
+
+    5 > 2 = true
+    5 < 2 = false
+    8 >= 8 = true 
+    9 <= 7 = false
+    //obs o = nas linguagen é lido com resebe
+    5 == '5' = false
+    //indentidade restrica tera que ser a mesma grandesa e numero
+    5 === '5' = true
+    //diferente
+    4 != '4' = false
+    4 !== '4' = true
+
+ 
+//logico
+
+    ! negação
+    &&  conjunção
+    || disjunção    
+
+//ternarios
+
+    / ? / : /
+
+    idade > 18 ? 'maior' : 'menor'
 
 
 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 9</title>
+    <style>
+        body {
+            background-color: cyan;
+            color: gray;
+            font: normal 15pt arial;
+        }
+    </style>
+</head>
+<body>
+        <h1>Ola mundo</h1>
+        <p>aqui é top de mais</p>
+        <p id="commit">aprendendo <strong>java Script</strong> neste html</p>
+        <div class="msg" id="msg" name="msg">click-aqui<br/></div>
+        <script>
+            corpo = window.document.body
+            p1 = window.document.getElementsByTagName('div')[0]
+            d1 = window.document.getElementsByClassName('msg')[0]
+            d2 = window.document.getElementsByName('msg')[0]
+            d3 = window.document.getElementById('msg')
+
+            window.document.write('esta escrito assim : ' + p1.innerText)
+            p1.style.color = 'black' 
+            corpo.style.background = 'yellow'
+            d1.style.background = 'blue'
+            d2.style.color = 'white'
+            d3.innerText = 'Bem-Vindo'
+            document.write(d3.innerHTML)
+
+            var p2 = window.document.querySelector('p#commit')
+            p2.style.color = 'pink'
+        </script>
+</body>
+</html>
