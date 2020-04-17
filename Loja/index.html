@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/logar.css">
+    <script src="javascript/scan.js"></script>
+    <title>HOME</title>
+</head>
+<body onload="logador()">
+    <div id="conteiner">
+        <!-- HEADER -->
+        <header class="flex-header">
+            <h1>E-commerce</h1>
+            <nav>
+                <ul>
+                    <a title="HOME" href=""><li>HOME</li></a>
+                    <a title="LOJA" href=""><li>LOJA</li></a>
+                    <div id="logado">
+                        <!--logado-->
+                    </div>
+                </ul>
+            </nav>
+        </header>
+    
+        <!-- login -->
+        <input type="checkbox" id="logar">
+        <div class="desfoque">
+            <main class="logar">
+                <h1>logar</h1>
+                <form>
+                    <label for="usuario">Seu Nome ou Email:</label>
+                    <input class="campo" type="text" name="usuario" id="usuario">
+            
+                    <label for="senha">Senha</label>
+                    <input class="campo" type="password" name="senha" id="senha">
+            
+                    <div id="erro"></div>
+            
+                    <input class="bot" type="button" value="Logar" onclick="logar()">
+                    <label class="cancelar" for="logar">cancelar</label>
+                    <a class="cancelar" href="cadastro/html/registrar.html">Resgistrar-se</a>
+                </form>
+            </main>
+        </div>
+        
+        <!-- Condeudo -->
+        <main>
+            
+        </main>
+
+        <!-- FOOTER -->
+        <footer w3-include-html="body/footer.html"></footer>
+    </div>
+    <script>includeHTML()</script>
+    <script src="javascript/logar.js"></script>
+</body>
+</html>

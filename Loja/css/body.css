@@ -1,0 +1,38 @@
+* {
+    border-collapse: collapse;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.desfoque {
+    background-color: rgba(0, 0, 0, 0.750);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#conteiner {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 10vh 82.5vh 7.5vh;
+    grid-template-areas:"H H"
+                        "M M"
+                        "F F";
+}
+header {
+    grid-area: H;
+    width: 100%;
+}
+main {
+    grid-area: M;
+    width: 100%;
+}
+footer {
+    grid-area: F;
+    width: 100%;
+}

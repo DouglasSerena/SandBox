@@ -1,0 +1,63 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+body {
+    background-color: rgba(128, 128, 128, 0.178);
+}
+main {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10%;
+    padding: 1%;
+    width: 25%;
+    box-shadow: 1px 1px 10px rgba(119, 136, 153, 0.692);
+}
+input {
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    outline: 0;
+    resize: none;
+}
+input:not(:placeholder-shown) {
+    background-color: lightgray;
+}
+.campo {
+    width: 100%;
+}
+label {
+    color: black;
+    display: block;
+    margin-top: 10px;
+}
+p {
+    margin-top: 10px
+}
+form > a {
+    text-decoration: none;
+    float: right;
+    color: black;
+    font-size: 14px;
+}
+.bot {
+    background-color: lightgray;
+    border: 1px solid rgba(0, 0, 0, 0.295);
+    border-radius: 5px;
+    padding: 5px;
+    outline: 0;
+    resize: none;
+    cursor: pointer;
+}
+#erro {
+    margin: 5px 0 5px 0;
+    color: red;
+}
+#divlogar {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

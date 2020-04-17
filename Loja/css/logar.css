@@ -1,0 +1,61 @@
+.logar {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 15%;
+    padding: 1%;
+    width: 25%;
+    box-shadow: 1px 1px 10px rgb(119, 136, 153);
+}
+.logar input {
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    outline: 0;
+    resize: none;
+}
+.logar input:not(:placeholder-shown) {
+    background-color: lightgray;
+}
+.logar .campo {
+    width: 100%;
+}
+.logar label {
+    color: black;
+    display: block;
+    margin-top: 10px;
+}
+.logar p {
+    margin-top: 10px
+}
+.logar .bot {
+    background-color: lightgray;
+    border: 1px solid rgba(0, 0, 0, 0.295);
+    border-radius: 5px;
+    padding: 5px;
+    outline: 0;
+    resize: none;
+    cursor: pointer;
+}
+.cancelar {
+    background-color: lightgray;
+    border: 1px solid rgba(0, 0, 0, 0.295);
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    float: right;
+    height: 27px;
+    padding: 5px;
+    outline: 0;
+    resize: none;
+    margin: 0!important;
+    width: auto;
+}
+.logar #erro {
+    margin: 5px 0 5px 0;
+    color: red;
+}
+body input[type="checkbox"] {display: none;}
+body input[type="checkbox"]:checked + div {
+    display: block;
+}

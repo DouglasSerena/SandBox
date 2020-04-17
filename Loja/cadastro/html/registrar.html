@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body >
+    <main onload="save()">
+        <h1>Cadastro</h1>
+        <form>
+            <label for="usuario">Seu Nome:</label>
+            <input class="campo" type="text" name="usuario" id="usuario">
+
+            <label for="email">Email:</label>
+            <input class="campo" type="email" name="email" id="email">
+
+            <label for="senha">Senha</label>
+            <input class="campo" type="password" name="senha" id="senha">
+            
+            <label for="verificarSenha">Verificar Senha</label>
+            <input class="campo" type="password" name="verificarSenha" id="verificarSenha">
+
+            <label for="aceitarTermos">
+                <input type="checkbox" name="aceitarTermos" id="aceitarTermos">
+                Aceito os termos. caso queira le entre <a href="">aqui</a>.
+            </label>
+
+            <div id="erro"></div>
+
+            <input class="bot" type="button" value="Enviar" onclick="enviar()">
+            <a class="bot" href="../../index.html">Voltar</a>
+        </form>
+    </main>
+    <script src="../../javascript/registar.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>verificar Usuario</title>
+</head>
+<body>
+    <main>
+        <h1>verificar Dados</h1>
+        <form>
+            <label for="usuario">Nome de usuario:</label>
+            <input class="campo" type="text" name="usuario" id="usuario">
+
+            <label for="email">Email</label>
+            <input class="campo" type="email" name="email" id="email">
+
+            <div id="erro"></div>
+
+            <input id="botao" class="bot" type="button" value="Verificar" onclick="verificarDados()">
+        </form>
+    </main>
+    <script src="../javascript/verificaUsuario.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+/GitHub/SandBox/C#/bin/Debug/netcoreapp3.1/SandBox
+/GitHub/SandBox/C#/bin/Debug/netcoreapp3.1/SandBox.deps.json
+/GitHub/SandBox/C#/bin/Debug/netcoreapp3.1/SandBox.runtimeconfig.json
+/GitHub/SandBox/C#/bin/Debug/netcoreapp3.1/SandBox.runtimeconfig.dev.json
+/GitHub/SandBox/C#/bin/Debug/netcoreapp3.1/SandBox.dll
+/GitHub/SandBox/C#/bin/Debug/netcoreapp3.1/SandBox.pdb
+/GitHub/SandBox/C#/obj/Debug/netcoreapp3.1/SandBox.csprojAssemblyReference.cache
+/GitHub/SandBox/C#/obj/Debug/netcoreapp3.1/SandBox.AssemblyInfoInputs.cache
+/GitHub/SandBox/C#/obj/Debug/netcoreapp3.1/SandBox.AssemblyInfo.cs
+/GitHub/SandBox/C#/obj/Debug/netcoreapp3.1/SandBox.dll
+/GitHub/SandBox/C#/obj/Debug/netcoreapp3.1/SandBox.pdb

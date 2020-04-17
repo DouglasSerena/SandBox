@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Redefinir senha</title>
+</head>
+<body>
+    <main>
+        <h1>Redefinir senha</h1>
+        <form>
+            <label for="senha">Nova senha:</label>
+            <input class="campo" type="password" name="senha" id="senha">
+
+            <label for="verificarSenha">Verica nova senha:</label>
+            <input class="campo" type="password" name="verificarSenha" id="verificarSenha">
+
+            <div id="erro"></div>
+
+            <input id="botao" class="bot" type="button" value="Redefinir" onclick="redefinir()">
+        </form>
+    </main>
+    <script src="../javascript/newSenha.js"></script>
+</body>
+</html>

@@ -23,3 +23,4 @@ npm install --save sequelize
 npm install --save mysql2
 npm install express
 npm install --save express-handlebars
+npm install bootstrap@3
