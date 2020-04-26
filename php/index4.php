@@ -33,7 +33,7 @@
 
     ?>
 
-    <form action="/" method="POST" enctype="multipart/form-data">
+    <form action="<?php $_SERVER['php_self'];?>" method="POST" enctype="multipart/form-data">
         <input type="file" name="arquivo[]" multiple id=""><br/>
         <button type="submit" name="Enviado"> Enviar </button>
     </form>

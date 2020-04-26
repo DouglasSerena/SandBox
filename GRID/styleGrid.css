@@ -7,8 +7,8 @@ body, html {
 
 .container {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 15vh 75vh 10vh;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 25vh 75vh 10vh;
     grid-template-areas: "h h"
                          "m s"
                          "f f";
@@ -16,17 +16,17 @@ body, html {
 
 header {
     background-color: green;
-    grid-area: h;
+    grid-area: m;
 }
 main {
     background-color: gray;
-    grid-area: m;
+    grid-area: f;
 }
 siderbar {
     background-color: red;
-    grid-area: s;
+    grid-area: h;
 }
 footer {
     background-color: blue;
-    grid-area: f;
+    grid-area: s;
 }
