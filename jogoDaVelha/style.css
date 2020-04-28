@@ -1,0 +1,56 @@
+* {
+    border-collapse: collapse;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 1% auto;
+    padding: 0;
+    width: 75%;
+}
+.boneco {
+    position: absolute;
+    border: 1px solid black;
+    background-color: blue;
+}
+.cabeca {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    top: 100px;left: 200px;
+}
+.corpo {
+    width: 100px;
+    height: 250px;
+    border-radius: 300px;
+    top: 230px;left: 222px;
+}
+.bracoEsquerdo{
+    height: 150px;
+    width: 25px;
+    border-radius: 15px;
+    top: 255px;left: 180px;
+    transform: rotate(25deg);
+}
+.bracoDireito {
+    height: 150px;
+    width: 25px;
+    border-radius: 15px;
+    top: 255px;left: 340px;
+    transform: rotate(-25deg);
+}
+.pernaEsquerda {
+    height: 150px;
+    width: 25px;
+    border-radius: 15px;
+    top: 445px;left: 215px;
+    transform: rotate(5deg);
+}
+.pernaDireita {
+    height: 150px;
+    width: 25px;
+    border-radius: 15px;
+    top: 445px;left: 300px;
+    transform: rotate(-5deg);
+}
