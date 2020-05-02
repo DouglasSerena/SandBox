@@ -1,4 +1,4 @@
-exports = class ContaCorrente{
+export default class ContaCorrente{
     constructor (_saldo, agencia) {
         this._saldo = 0;
         this.agencia = agencia;

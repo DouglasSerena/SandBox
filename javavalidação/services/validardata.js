@@ -1,4 +1,4 @@
-export const validardata = input => {
+export default validardata = input => {
     alert("oi");
     const dataNascimento = new date(input.value);
     const dataAtual = new date();

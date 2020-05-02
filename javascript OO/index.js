@@ -1,5 +1,5 @@
-module {Cliente} from "./Cliente.js";
-import {ContaCorrente} from "./Corrente.js";
+import Cliente from "./Cliente.js";
+import ContaCorrente from "./Corrente.js";
 
 const cliente1 = new Cliente();
 cliente1.nome = "Ricardo";
@@ -19,5 +19,5 @@ contaCorrenteRicardo.depositar(100);
 
 const valorSacado = contaCorrenteRicardo.sacar(50);
 console.log(valorSacado);
-
+console.log(cliente1);
 console.log(contaCorrenteRicardo);
