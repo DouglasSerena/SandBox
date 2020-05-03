@@ -177,3 +177,5 @@ SET('value1','value2',...)  ==  1, 2, 3, 4 ó 8 bytes, dependendo do número de 
 'ab'         ->  'ab '  =======  3 bytes
 'abcd'       ->  'abcd'  ======  5 bytes
 'abcdefgh'   ->  'abcd'  ======  5 bytes
+
+teste
