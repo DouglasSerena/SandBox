@@ -7,11 +7,20 @@ ddl = comandos de definição de dados;
 
 dml = comandos de manipulação de dados;
 
+status;
+
+ORDER BY + nome do campo; // ordena em orde alfabetica delo nome do campo ou
+ORDER BY + nome do campo + asc;
+
+ORDER BY + nome do campo + DESC; // ordena em orde alfabetica o que ao contrario pelo nome do campo
+
+SHOW CREATE table ou DATABSE // mostra os comandos usado para criar a tabela ou banco;
+
 //criar um banco de dados.
 
 CREATE DATABSE + banco
-deixar um padrao de caracteres // default character set utf8
-definir o mesmo padrao de coleção // default collate utf8_general_ci;
+default character set utf8 // deixar um padrao de caracteres 
+default collate utf8_general_ci; // definir o mesmo padrao de coleção 
 
 //criar um tabela
 
@@ -62,6 +71,7 @@ primary key(valor)  =  valor princimal da tabela;
 uniqie  =============  SO pode ter um nome com esse valor
 unsigned  ===========  essa regra nao deixa aver sinal no valor como exempço numeros negativos economizando 1 bity
 limit  ==============  limita o o numero de linha que vao ser editadas
+index  ==============  remove um indice ex: alter table + nome table + drop index + nome do compo;
 
 */
 
@@ -81,9 +91,34 @@ USE + banco;
 
 SHOW TABLES;
 
-//descrever a tabela
+//descrever a tabela;
 
 DESCRIBE + tabela;
+
+//select distinct + nome do campo + from + talble
+
+//select count(*) from + tabela // conta o numero de resgistros da tabela
+
+//select max(*) from + tabela // informa o maior valor do um campo ou registro;
+
+//select max(*) from + tabela // informa o menor valor do um campo ou registro;
+
+//select sum(*) from + tabela // soma todos os valore do valor informado;
+
+//select avg(*) from + tabela // tira a media de todos os valore informado;
+
+//select * from + table + where + nome do campo + valores de baixo;
+
+//NO SELECT PODE HAVER O USO DE OPERADORES RALACIONAIS COMO < > = <= >= != ou (<>) exemplo select * from + name + where ano<=2010;
+//select * from + table + where + nome do campo + between + valor + and + valor2;  =  valor entre valor 1 e 2;
+//select * from + table + where + nome do campo + in ('valor1','valor2','valor3')  =  especifica o valor a ser coletado;
+//select * from + table + where + nome do campo + valor1 > 1 and valor2 < 2  =======  uso de operadores logico;
+//select * from + table + where + nome do campo + valor1 > 1 or valor2 < 2  ========
+//select * from + table + where + nome do campo + LIKE 'p%'  =======================  Define uma letra ou palavra que seja igual a mesma;
+//select * from + table + where + nome do campo + NOT LIKE '%A%'  ==================  pega todos os registo que nao possua o valor informado;
+//%  ===============================  ele troca o % por aguan caractere usar com like a posição do % afeta o resultado;
+//_  ===============================  obriga a ter um valor sobre o anderlane ex p_p == php;
+// %A // 1 tudo que terna com A // A% // 2 tudo que comeca com A // %A% // tudo que tenha A;
 
 //selecionar todos os dados da tabela
 
