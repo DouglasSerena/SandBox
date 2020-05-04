@@ -7,6 +7,13 @@ ddl = comandos de definição de dados;
 
 dml = comandos de manipulação de dados;
 
+acid
+
+//a atomicidade == toda a tarefa tem qeu ser feita / ou tudo acontece o nada acontece
+//c concistente == quanto haver uma resquisisao tem qeu teminar tudo ok como coemcou
+//i isolamento == ele faz requisicoes isolada
+//d durabilidade == 
+
 status;
 
 ORDER BY + nome do campo; // ordena em orde alfabetica delo nome do campo ou
@@ -75,6 +82,42 @@ index  ==============  remove um indice ex: alter table + nome table + drop inde
 
 */
 
+//key estrangueira
+
+alter table + tabela +
+add foreign key (Nome do campo)
+references + nome tabela que faz referencia a + (campo que ira fazer ferencia a o outro campo acima);
+
+ex
+
+alter table gafanhotos
+add foreign key (cursopreferido)
+references cursos(id_curso);
+
+//join
+
+//join junta duas tabela;
+
+ex
+
+select g.nome, g.cursopreferido, c.nome, c.ano
+from gafanhotos as g inner join cursos as c
+on c.id_curso = g.cursopreferido;
+//refere uma key a uma key estrangueira
+
+ex 2
+
+select g.nome, g.cursopreferido, c.nome, c.ano
+from gafanhotos inner join cursos
+on cursos.id_curso = gafanhotos.cursopreferido;
+// da um apelido a uma tabela
+
+ex 3
+
+select g.nome, g.cursopreferido, c.nome, c.ano
+from gafanhotos as g left (ou right) outer join cursos as c
+on c.id_curso = g.cursopreferido; // mostra todos os dado do lado informado
+
 //deletar um banco de dados
 
 drop DATABSE + banco;
@@ -96,6 +139,14 @@ SHOW TABLES;
 DESCRIBE + tabela;
 
 //select distinct + nome do campo + from + talble
+
+//SELECT + nome campo + from + nome tabela + GROUP BY + nome do campo // agrupar os cados
+
+//SELECT + nome campo + COUNT(*) from + nome tabela + GROUP BY + nome do campo // agrupar os cados e conta tantos tem
+
+//SELECT + nome campo + from + nome tabela + GROUP BY + nome do campo HAVING + parametro que sera filtrado ex = carga > 30;
+
+//SELECT + nome campo + from + nome tabela + GROUP BY + nome do campo HAVING + (select avg(*) from + tabela ) // faz a media dos cursos;
 
 //select count(*) from + tabela // conta o numero de resgistros da tabela
 
