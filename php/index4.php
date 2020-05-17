@@ -8,6 +8,7 @@
 
     <?php
 
+    var_dump($_FILES);
     if (isset($_POST["Enviado"])) {
         $formatos = array("png", "jpeg", "jpg", "gif");
         $quantidade = count($_FILES['arquivo']['name']);

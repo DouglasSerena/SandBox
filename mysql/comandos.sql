@@ -75,7 +75,7 @@ decimal (5,2)  ====== define o tamanho das casa (5) e o ,2 -
 default 'example'  ==  define um valor caso não seja preenchido no cadastro; obj: aspas simples.
 auto_increment  =====  adiciona automaticamente um valor crecente mente de um a o ininito;
 primary key(valor)  =  valor princimal da tabela;
-uniqie  =============  SO pode ter um nome com esse valor
+unique  =============  SO pode ter um nome com esse valor
 unsigned  ===========  essa regra nao deixa aver sinal no valor como exempço numeros negativos economizando 1 bity
 limit  ==============  limita o o numero de linha que vao ser editadas
 index  ==============  remove um indice ex: alter table + nome table + drop index + nome do compo;
