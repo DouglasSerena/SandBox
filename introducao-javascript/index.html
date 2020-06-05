@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aparecida Nutrição</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h1>Aparecida Nutrição</h1>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Meus pacientes</h2>
+				<label for="filter">Filtro</label>
+				<input type="text" class="filter" placeholder="Digite um nome para buscar" name="filter" id="filter">
+				<table>
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Peso(kg)</th>
+						   	<th>Altura(m)</th>
+							<th>Gordura Corporal(%)</th>
+							<th>IMC</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-pacientes">
+							
+					</tbody>
+				</table>
+				<input type="submit" value="Buscar" id="buscar-paciente" class="botao bto-principal">
+			</section>
+
+			<!-- form -->
+			<section class="container">
+				<h2 id="titulo-form">Adicionar novo paciente</h2>
+				<ul id="message">
+				</ul>
+				<form>
+					<div class="grupo-nome">
+						<label for="nome">Nome:</label>
+						<input id="nome" name="nome" type="text" placeholder="digite o nome do seu paciente" class="campo">
+					</div>
+					<div class="grupo">
+						<label for="peso">Peso:</label>
+						<input id="peso" name="peso" type="text" placeholder="digite o peso do seu paciente" class="campo campo-medio">
+					</div>
+					<div class="grupo">
+						<label for="altura">Altura:</label>
+						<input id="altura" name="altura" type="text" placeholder="digite a altura do seu paciente" class="campo campo-medio">
+					</div>
+					<div class="grupo">
+						<label for="gordura">% de Gordura:</label>
+						<input id="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
+					</div>
+			
+					<input type="submit" value="Enviar" id="adicionar-paciente" class="botao bto-principal">
+				</form>
+			</section>
+
+		</main>
+
+		<script src="./js/event.js"></script>
+		<script src="./js/index.js" type="module"></script>
+	</body>
+</html>

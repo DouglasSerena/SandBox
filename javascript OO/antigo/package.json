@@ -1,12 +1,12 @@
 {
-  "name": "bytebanck",
+  "name": "bytebank",
   "version": "1.0.0",
-  "description": "Projeto do bytebanck para seus clientes",
+  "description": "projeto de um banco virtual",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Douglas serena",
+  "author": "Douglas Serena",
   "license": "ISC",
   "type": "module"
 }

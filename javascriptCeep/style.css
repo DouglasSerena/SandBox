@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.bg-blue {
+    background-color: lightblue;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-start {
+    justify-content: start;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.align-item-center {
+    align-items: center;
+}

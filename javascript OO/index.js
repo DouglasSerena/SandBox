@@ -1,23 +1,13 @@
-import Cliente from "./Cliente.js";
-import ContaCorrente from "./Corrente.js";
+import Diretor from './Pessoas/Funcionario/Diretor.js';
+import Gerente from './Pessoas/Funcionario/Gerente.js';
+import Auth from './helper/Auth.js';
 
-const cliente1 = new Cliente();
-cliente1.nome = "Ricardo";
-cliente1.cpf = 11122233309;
+const gerente = new Gerente("Altair", 90022244411, 10000.00);
+const diretor = new Diretor("Ana", 902323233411, 5000.00);
 
-const cliente2 = new Cliente();
-cliente2.nome = "Alice";
-cliente2.cpf = 88822233309;
+gerente.cadastrarSenha("188888");
+diretor.cadastrarSenha("188888");
 
+var check = Auth.login(diretor, '188888');
 
-const contaCorrenteRicardo = new ContaCorrente();
-contaCorrenteRicardo.agencia = 1001;
-
-contaCorrenteRicardo.depositar(-100);
-contaCorrenteRicardo.depositar(100);
-contaCorrenteRicardo.depositar(100);
-
-const valorSacado = contaCorrenteRicardo.sacar(50);
-console.log(valorSacado);
-console.log(cliente1);
-console.log(contaCorrenteRicardo);
+console.log(check);
