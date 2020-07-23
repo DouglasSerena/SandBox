@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function returnFunctios() {
+            function test1() {
+                console.log("Test com valor 1");
+            }
+            function test2() {
+                console.log("Test com valor 2");
+            }
+
+            // define um objeto com um função interna
+            objectFunctio = {
+                test3() {
+                    console.log("Test com valor 3");
+                }
+            }
+
+            // retorna as funções para quem atribuir esta função a um variavel
+            return {
+                test1,
+                test2,
+                objectFunctio
+            }
+        }
+
+        const functions = returnFunctios();
+
+        functions.test1();
+        functions.test2();
+
+        // coloca a função para uma variavel que ses torna um função / pode chamar direto com dois parentes no final
+        let test3 = functions.objectFunctio.test3;
+        // executa a função 
+        test3();
+    </script>
+</body>
+</html>

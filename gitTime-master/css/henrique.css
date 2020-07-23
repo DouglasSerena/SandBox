@@ -1,0 +1,90 @@
+.pText {
+    text-align: left;
+}
+
+.pTextExemploL {
+    text-align: left;
+    font-weight: bold;
+    background: #04D361;
+}
+
+.pTextExemploR {
+    text-align: right;
+    font-weight: bold;
+    background: #04D361;
+}
+
+.pTextExemploC {
+    text-align: center;
+    font-weight: bold;
+    background: #04D361;
+}
+
+.greyText {
+    font-size: 18px;
+    text-align: center;
+    color: gray;
+}
+
+.shadowExemplo {
+    text-shadow: 5px 5px 5px black;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: #04D361;
+}
+
+.wavy {
+    text-decoration: underline wavy;
+    text-decoration-color: #04D361;
+}
+
+.overline {
+    text-decoration: overline;
+    text-decoration-color: #04D361;
+}
+
+.overwavy {
+    text-decoration: overline wavy;
+    text-decoration-color: #04D361;
+}
+
+.through {
+    text-decoration: line-through;
+    text-decoration-color: #04D361;
+}
+
+.thrwavy {
+    text-decoration: line-through wavy;
+    text-decoration-color: #04D361;
+}
+
+.hoverExemplo strong:nth-child(1):hover {
+    color: #04D361;
+}
+
+.hoverExemplo strong:nth-child(2):hover {
+    color: #04D361;
+}
+
+.hoverExemplo strong:nth-child(3):hover {
+    color: #04D361;
+}
+
+.hoverExemplo strong:nth-child(4):hover {
+    color: #04D361;
+}
+
+.bloco {
+    width: 100px;
+    height: 100px;
+    background: #04D361;
+    position: relative;
+    animation: move 6s infinite;
+}
+
+@keyframes move {
+    from {left: 0px;}
+    to {left:616px; background:#7159C1;}
+}

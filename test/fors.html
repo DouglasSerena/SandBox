@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let datas = ["test","test2"]
+        
+        // passa os valores da array para a variavel value
+        for (let value of datas) {
+            console.log(value);
+        }
+        
+        console.log("||||||||||||||||||||||||||||||||");
+        
+        datas = {
+            valueOne: "Frist Value",
+            valueTwo: "Two Value",
+            valueThree: "three Value",
+            valueFour: "four Value",
+            valueFive: "five Value",
+            value: {
+                test: "oi"
+            }
+        }
+
+        // passa as key dos objetos para o a outra variavel
+        for (let value in datas) {
+            console.log(value);
+        }
+    </script>
+</body>
+</html>

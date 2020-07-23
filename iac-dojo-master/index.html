@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<title>dojo</title>
+</head>
+
+<body class="container w-50">
+    <div class="row">
+        <h2 class="w-100">Portas Lógicas</h2>
+
+        <div>
+            <label for="a">Variável A</label>
+            <select name="a" id="a">
+                <option value="true">True</option>
+                <option value="false">False</option>
+            </select>
+            <label for="b">Variável B</label>
+            <select name="b" id="b">
+                <option value="true">True</option>
+                <option value="false">False</option>
+            </select>
+        </div>
+        <!--<div class="w-100">
+            <input type="checkbox" id="a">
+            <label for="a">var a</label>
+            <input type="checkbox" id="b">
+            <label for="b">var b</label>
+        </div>-->
+        
+        <div>
+            <label for="porta">Selecione a porta</label>
+            <select name="porta" id="porta">
+                <option value="not">Not</option>
+                <option value="and">And</option>
+                <option value="or">Or</option>
+                <option value="xor">Xor</option>
+            </select>
+        </div>
+
+        <input class="w-100" type="submit" onclick="verificar()" value="Verificar">
+
+        <label class="w-100" id="resultado">Resultado</label>
+    </div>
+    <script src="./main.js"></script>
+	<!--<script src="./portaLogica.js"></script>-->
+</body>
+
+</html>
+
+<!--Cássio
+ douglas
+ Otávio - to láno js
+ willian
+ João Lucas
+ rafael
+ 
+ -->

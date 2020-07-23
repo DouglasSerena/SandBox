@@ -1,0 +1,71 @@
+.fonte01{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.fonte02{
+    text-align: left;
+    font-style: oblique;
+}
+
+.descricao{
+    text-indent: 25px;
+    text-align: justify;
+}
+
+.exemplo{
+    text-align: left;
+    line-height: 0.5;
+    font-style: oblique;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.exemplo01{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.exemplo02{
+    text-align: left;
+    font-size: 15px;
+}
+
+.exemplo03{
+    text-align: center;
+    font-size: larger;
+}
+
+.exemplo04{
+    text-align: right;
+    font-size: 150%;
+}
+
+.exemplo05{
+    text-align: left;
+    font-style: italic;
+}
+.exemplo06{
+    text-align: center;
+    font-style: normal;
+}
+
+.exemplo07{
+    text-align: left;
+    font-weight: bolder;
+}
+
+.exemplo08{
+    text-align: center;
+    font-weight: normal;
+}
+
+.exemplo09{
+    text-align: left;
+    font-variant: normal;
+}
+
+.exemplo10{
+    text-align: center;
+    font-variant: small-caps;
+}

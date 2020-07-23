@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // define uma array para guardar os observadores
+        const observer = [];
+
+        // adiciona um observador
+        function subscribe(observerFunctio) {
+            observer.push(observerFunctio);
+        }
+
+        // notifica todos os observadores a novos dados
+        function notifyAll(command) {
+            console.log(`Notify ${observer.length}`)
+            for (const observerFunctio of observer) {
+                observerFunctio(command);
+            }
+        }
+
+        subscribe(test);
+        subscribe(test2);
+
+        function test(command) {
+            console.log(command.text)
+        }
+
+        function test2(command) {
+            console.log(command.text2)
+        }
+
+        let data = {
+            text: "test concuido",
+            text2: "test2 concuido"
+        };
+
+        // chama a função para notificar todos
+        notifyAll(data);
+
+    </script>
+</body>
+</html>
